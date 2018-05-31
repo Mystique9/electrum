@@ -1,8 +1,8 @@
 name: electrumg
 version: master
-summary: BitcoinGold thin client
+summary: BitcoinInterest thin client
 description: |
-  Lightweight BitcoinGold client
+  Lightweight BitcoinInterest client
 
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: strict

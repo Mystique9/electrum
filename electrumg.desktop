@@ -2,16 +2,16 @@
 # sudo desktop-file-install electrumg.desktop
 
 [Desktop Entry]
-Comment=Lightweight BitcoinGold Client
+Comment=Lightweight BitcoinInterest Client
 Exec=electrumg %u
-GenericName[en_US]=BitcoinGold Wallet
-GenericName=BitcoinGold Wallet
+GenericName[en_US]=BitcoinInterest Wallet
+GenericName=BitcoinIntrest Wallet
 Icon=electrumg
-Name[en_US]=Electrum BitcoinGold Wallet
-Name=Electrum BitcoinGold Wallet
+Name[en_US]=Electrum BitcoinInterest Wallet
+Name=Electrum BitcoinInterest Wallet
 Categories=Finance;Network;
 StartupNotify=false
 Terminal=false
 Type=Application
-MimeType=x-scheme-handler/bitcoingold;
+MimeType=x-scheme-handler/bitcoininterest;
 

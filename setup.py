@@ -73,12 +73,12 @@ setup(
     },
     scripts=['electrumg'],
     data_files=data_files,
-    description="Lightweight BitcoinGold Wallet",
-    author="The BitcoinGold Developers",
-    author_email="support@bitcoingold.org",
+    description="Lightweight Bitcoin Interest Wallet",
+    author="The Bitcoin Interest Developers",
+    author_email="admin@bitcoininterest.io",
     license="MIT Licence",
-    url="https://bitcoingold.org",
-    long_description="""Lightweight BitcoinGold Wallet"""
+    url="https://www.bitcoininterest.io/",
+    long_description="""Lightweight Bitcoin Interest Wallet"""
 )
 
 # Optional modules (not required to run Electrum)

@@ -8,7 +8,7 @@
 
   !define PRODUCT_NAME "ElectrumG"
   !define PRODUCT_WEB_SITE "https://github.com/BTCGPU/electrum"
-  !define PRODUCT_PUBLISHER "BitcoinGold Organization"
+  !define PRODUCT_PUBLISHER "BitcoinInterest Organization"
   !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 
 ;--------------------------------
@@ -159,11 +159,11 @@ Section
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\electrumg-${PRODUCT_VERSION}.exe" "" "$INSTDIR\electrumg-${PRODUCT_VERSION}.exe" 0
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME} Testnet.lnk" "$INSTDIR\electrumg-${PRODUCT_VERSION}.exe" "--testnet" "$INSTDIR\electrumg-${PRODUCT_VERSION}.exe" 0
 
-  ;Links bitcoingold: URI's to ElectrumG
-  WriteRegStr HKCU "Software\Classes\bitcoingold" "" "URL:bitcoingold Protocol"
-  WriteRegStr HKCU "Software\Classes\bitcoingold" "URL Protocol" ""
-  WriteRegStr HKCU "Software\Classes\bitcoingold" "DefaultIcon" "$\"$INSTDIR\electrumg.ico, 0$\""
-  WriteRegStr HKCU "Software\Classes\bitcoingold\shell\open\command" "" "$\"$INSTDIR\electrumg-${PRODUCT_VERSION}.exe$\" $\"%1$\""
+  ;Links bitcoininterest: URI's to ElectrumG
+  WriteRegStr HKCU "Software\Classes\bitcoininterest" "" "URL:bitcoininterest Protocol"
+  WriteRegStr HKCU "Software\Classes\bitcoininterest" "URL Protocol" ""
+  WriteRegStr HKCU "Software\Classes\bitcoininterest" "DefaultIcon" "$\"$INSTDIR\electrumg.ico, 0$\""
+  WriteRegStr HKCU "Software\Classes\bitcoininterest\shell\open\command" "" "$\"$INSTDIR\electrumg-${PRODUCT_VERSION}.exe$\" $\"%1$\""
 
   ;Adds an uninstaller possibilty to Windows Uninstall or change a program section
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
@@ -199,7 +199,7 @@ Section "Uninstall"
   Delete "$SMSTARTUP\${PRODUCT_NAME}.lnk"
   RMDir  "$SMPROGRAMS\${PRODUCT_NAME}"
   
-  DeleteRegKey HKCU "Software\Classes\bitcoingold"
+  DeleteRegKey HKCU "Software\Classes\bitcoininterest"
   DeleteRegKey HKCU "Software\${PRODUCT_NAME}"
   DeleteRegKey HKCU "${PRODUCT_UNINST_KEY}"
 SectionEnd
