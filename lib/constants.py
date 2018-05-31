@@ -27,7 +27,7 @@ import os
 import json
 from sys import maxsize
 
-GIT_REPO_URL = "https://github.com/BTCGPU/electrum"
+GIT_REPO_URL = "https://github.com/fellu/electrum"
 GIT_ISSUE_URL = GIT_REPO_URL + "/issues"
 
 
@@ -70,9 +70,9 @@ class BitcoinGoldBase(object):
 
 class BitcoinGoldMainnet(BitcoinGoldBase):
     WIF_PREFIX = 0x80
-    ADDRTYPE_P2PKH = 38
+    ADDRTYPE_P2PKH = 102
     ADDRTYPE_P2SH = 23
-    SEGWIT_HRP = "btg"
+    SEGWIT_HRP = "bci"
 
     HEADERS_URL = "https://headers.bitcoingold.org/blockchain_headers"
     GENESIS = "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
@@ -80,7 +80,7 @@ class BitcoinGoldMainnet(BitcoinGoldBase):
     DEFAULT_SERVERS = read_json('servers.json', {})
     CHECKPOINTS = read_json('checkpoints.json', [])
 
-    BTG_HEIGHT = 491407
+    BTG_HEIGHT = 505083
     LWMA_HEIGHT = maxsize
     PREMINE_SIZE = 8000
 
