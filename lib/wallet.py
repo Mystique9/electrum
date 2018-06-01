@@ -190,7 +190,7 @@ class Abstract_Wallet(PrintError):
 
         self.gap_limit_for_change = 6 # constant
         # saved fields
-        self.use_change            = storage.get('use_change', True)
+        self.use_change            = storage.get('use_change', False)
         self.multiple_change       = storage.get('multiple_change', False)
         self.labels                = storage.get('labels', {})
         self.frozen_addresses      = set(storage.get('frozen_addresses',[]))

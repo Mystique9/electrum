@@ -180,7 +180,6 @@ class Blockchain(util.PrintError):
         height = header.get('block_height')
         server_header_hash = hash_header(header, height)
         local_header_hash = self.get_hash(height)
-        print("current height: {0}".format(height))
 
         if server_header_hash != local_header_hash:
             self.print_error("Header hash mismatch " + "(" + str(height) + ") "
@@ -256,8 +255,6 @@ class Blockchain(util.PrintError):
         size = len(data)
         offset = 0
         prev_hash = self.get_hash(height-1)
-        print("prev hash: {0}".format(prev_hash))
-
         headers = {}
         target = 0
 
@@ -658,7 +655,6 @@ class Blockchain(util.PrintError):
     def connect_chunk(self, idx, hexdata):
         try:
             data = bfh(hexdata)
-            print("Verify idx {0} * constants.net.CHUNK_SIZE {1} data".format(idx, constants.net.CHUNK_SIZE))
             if(idx != 2036): # ToDo fix check for chunk 2036
                 self.verify_chunk(idx * constants.net.CHUNK_SIZE, data)
             self.print_error("validated chunk %d" % idx)

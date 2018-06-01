@@ -8,7 +8,7 @@ server = electrum-bci.novit.ro:50001:t
 proxy = None
 gap_limit = 5
 # booleans use python syntax
-use_change = True
+use_change = False
 gui = qt
 num_zeros = 2
 # default transaction fee is in Satoshis
