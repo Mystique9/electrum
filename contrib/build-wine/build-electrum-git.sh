@@ -26,7 +26,7 @@ for repo in electrum electrum-locale electrum-icons; do
 	git checkout master
 	cd ..
     else
-	URL=https://github.com/fellu/$repo.git
+	URL=https://github.com/BitcoinInterestOfficial/$repo.git
 	git clone -b master $URL $repo
     fi
 done

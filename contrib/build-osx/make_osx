@@ -21,7 +21,7 @@ VERSION=`git describe --tags`
 PYTHON_VERSION=3.6.4
 BUILDDIR=/tmp/electrum-build
 PACKAGE=Electrum-bci
-GIT_REPO=https://github.com/fellu/electrum
+GIT_REPO=https://github.com/BitcoinInterestOfficial/electrum
 
 
 info "Installing Python $PYTHON_VERSION"

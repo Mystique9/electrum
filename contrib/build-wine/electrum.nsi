@@ -7,7 +7,7 @@
 ;Variables
 
   !define PRODUCT_NAME "Electrum-bci"
-  !define PRODUCT_WEB_SITE "https://github.com/fellu/electrum"
+  !define PRODUCT_WEB_SITE "https://github.com/BitcoinInterestOfficial/electrum"
   !define PRODUCT_PUBLISHER "BitcoinInterest Organization"
   !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 
