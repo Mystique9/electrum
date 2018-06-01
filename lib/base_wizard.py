@@ -486,7 +486,7 @@ class BaseWizard(object):
         ])
         choices = [
             ('create_standard_seed', _('Standard')),
-            ('create_segwit_seed', _('Segwit')),
+            #('create_segwit_seed', _('Segwit')),
         ]
         self.choice_dialog(title=title, message=message, choices=choices, run_next=self.run)
 
