@@ -301,7 +301,7 @@ class Daemon(DaemonThread):
         if gui_name in ['lite', 'classic']:
             gui_name = 'qt'
         gui = __import__('electrum_gui.' + gui_name, fromlist=['electrum_gui'])
-        self.gui = gui.Electrum-bciui(config, self, plugins)
+        self.gui = gui.ElectrumGui(config, self, plugins)
         try:
             self.gui.main()
         except BaseException as e:
