@@ -25,3 +25,5 @@ bin/
 /venv/**
 /.idea/**
 /example.log
+electrum-bci-env
+contrib/*/tmp/
