@@ -412,7 +412,7 @@ class Blockchain(util.PrintError):
 
             h = read_file(name, get_header, self.lock)
         elif not os.path.exists(util.get_headers_dir(self.config)):
-            raise Exception('ElectrumG datadir does not exist. Was it deleted while running?')
+            raise Exception('Electrum-bci datadir does not exist. Was it deleted while running?')
         else:
             raise Exception('Cannot find headers file but datadir is there. Should be at {}'.format(name))
 

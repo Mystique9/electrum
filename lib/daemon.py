@@ -214,9 +214,9 @@ class Daemon(DaemonThread):
             #    response = "ok"
             #else:
             #    response = "error: current GUI does not support multiple windows"
-            response = "error: ElectrumG GUI already running"
+            response = "error: Electrum-bci GUI already running"
         else:
-            response = "Error: ElectrumG is running in daemon mode. Please stop the daemon first."
+            response = "Error: Electrum-bci is running in daemon mode. Please stop the daemon first."
         return response
 
     def load_wallet(self, path, password):
@@ -264,7 +264,7 @@ class Daemon(DaemonThread):
             path = config.get_wallet_path()
             wallet = self.wallets.get(path)
             if wallet is None:
-                return {'error': 'Wallet "%s" is not loaded. Use "electrumg daemon load_wallet"'%os.path.basename(path) }
+                return {'error': 'Wallet "%s" is not loaded. Use "electrum-bci daemon load_wallet"'%os.path.basename(path) }
         else:
             wallet = None
         # arguments passed to function
@@ -301,7 +301,7 @@ class Daemon(DaemonThread):
         if gui_name in ['lite', 'classic']:
             gui_name = 'qt'
         gui = __import__('electrum_gui.' + gui_name, fromlist=['electrum_gui'])
-        self.gui = gui.ElectrumGui(config, self, plugins)
+        self.gui = gui.Electrum-bciui(config, self, plugins)
         try:
             self.gui.main()
         except BaseException as e:
