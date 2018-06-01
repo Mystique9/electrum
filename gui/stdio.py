@@ -9,7 +9,7 @@ import getpass, datetime
 # minimal fdisk like gui for console usage
 # written by rofl0r, with some bits stolen from the text gui (ncurses)
 
-class Electrum-bciui:
+class ElectrumGui:
 
     def __init__(self, config, daemon, plugins):
         self.config = config

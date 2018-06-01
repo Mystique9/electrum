@@ -43,7 +43,7 @@ from kivy.logger import Logger
 
 
 
-class Electrum-bciui:
+class ElectrumGui:
 
     def __init__(self, config, daemon, plugins):
         Logger.debug('Electrum-bciUI: initialising')

@@ -85,7 +85,7 @@ class QNetworkUpdatedSignalObject(QObject):
     network_updated_signal = pyqtSignal(str, object)
 
 
-class Electrum-bciui:
+class ElectrumGui:
 
     def __init__(self, config, daemon, plugins):
         set_language(config.get('language'))
